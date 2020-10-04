@@ -1,0 +1,32 @@
+{
+  "myBudget": [
+    {
+      "title": "Eat Out",
+      "budget": 30
+    },
+    {
+      "title": "Rent",
+      "budget": 385
+    },
+    {
+      "title": "Grocery",
+      "budget": 110
+    },
+    {
+      "title": "OlaCabs",
+      "budget": 50
+    },
+    {
+      "title": "Water bill",
+      "budget": 70
+    },
+    {
+      "title": "DukeElectricity",
+      "budget": 100
+    },
+    {
+      "title": "PiedMontGas",
+      "budget": 50
+    }
+  ]
+}

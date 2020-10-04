@@ -1,4 +1,5 @@
 const express = require('express');
+const loadData = require("./LoadData")
 const app = express();
 const port = 3000;
 
@@ -30,7 +31,7 @@ app.get('/hello',(req,res) => {
 });
 
 app.get('/budget',(req,res) => {
-    res.json(budget);
+    res.json(loadData);
 });
 
 app.listen(port, () => {
