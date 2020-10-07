@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
  <!-- This is an SEO Change -->	
-<meta name="author" content="Shaik Adil">
+    <meta name="author" content="Shaik Adil">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="main.css">
     <!-- This is an SEO Change -->	
@@ -80,9 +80,12 @@
                       <canvas id="myChart" style="display: block; width: 50%; height: 50%;"></canvas>
                   </p>
           </div>
-     </div>  
 
-      </main>
+
+        
+    </div>  
+    </main>
+      
    
 	<!-- This is a Semantic HTML element 'section'-->
 
@@ -157,7 +160,7 @@
 
 
         function getBudget() {
-        axios.get("/budget").then(function (res) {
+        axios.get("http://localhost:3000/budget").then(function (res) {
             console.log(res.data); 
           for (var i = 0; i < res.data.myBudget.length; i++) {
             dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
@@ -177,7 +180,7 @@
     var color;
 
     function getBudget() {
-      axios.get("/budget").then(function (res) {
+      axios.get("http://localhost:3000/budget").then(function (res) {
         for (var i = 0; i < res.data.myBudget.length; i++) {
           data_budget.push(res.data.myBudget[i].budget);
           labels.push(res.data.myBudget[i].title);
